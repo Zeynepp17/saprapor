@@ -11,8 +11,6 @@ else:
     df = pd.read_excel("ZFMR0003 Raporu Örnek.xlsx")
     st.info("Dummy Dosyasi Gösteriliyor.")
 
-
-st.set_page_config(page_title= "RAPOR", layout= "wide")
 st.title(" SAP Raporu Dinamik Karşılaştırma")
 
 
