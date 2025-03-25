@@ -5,7 +5,7 @@ uploaded_file = st.file_uploader("Excel Dosyanizi Yükleyin", type=["xlsx"])
 
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
-    st.succes("Dosya Yüklendi!")
+    st.success("Dosya Yüklendi!")
 else:
     df = pd.read_excel("ZFMR0003 Raporu Örnek.xlsx")
     st.info("Dummy Dosyasi Gösteriliyor.")
