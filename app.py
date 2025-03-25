@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.read_excel("c:\\Users\\zeynp\\raportest\\ZFMR0003 Raporu Örnek.xlsx")
+df = pd.read_excel("ZFMR0003 Raporu Örnek.xlsx")
+
 
 st.set_page_config(page_title= "RAPOR", layout= "wide")
 st.title(" SAP Raporu Dinamik Karşılaştırma")
