@@ -1,6 +1,7 @@
 import streamlit as st
-import pandas as pd
+import pandas as pd 
 
+st.set_page_config(page_title= "RAPOR", layout= "wide")
 uploaded_file = st.file_uploader("Excel Dosyanizi Yükleyin", type=["xlsx"])
 
 if uploaded_file is not None:
