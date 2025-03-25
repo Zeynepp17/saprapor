@@ -1,8 +1,14 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.read_excel("ZFMR0003 Raporu Örnek (Dummy).xlsx")
+uploaded_file = st.file_uploader("Excel Dosyanizi Yükleyin", type=["xlsx"])
 
+if uploaded_file is not None:
+    df = pd.read_excel(uploaded_file)
+    st.succes("Dosya Yüklendi!")
+else:
+    df = pd.read_excel("ZFMR0003 Raporu Örnek.xlsx")
+    st.info("Dummy Dosyasi Gösteriliyor.")
 
 
 st.set_page_config(page_title= "RAPOR", layout= "wide")
